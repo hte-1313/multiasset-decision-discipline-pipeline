@@ -5,7 +5,7 @@ All project-wide constants for the ST446 MultiAsset Decision Pipeline.
 """
 
 # ── GCS paths ──────────────────────────────────────────────────────────────
-GCS_BUCKET   = "gs://st446-covid-sujay-2026-9f3a"
+GCS_BUCKET   = "gs://st446-covid-sujay-2026-9f3a" ### bucket used on GCP
 DATA_ROOT    = GCS_BUCKET + "/pipeline_v2"
 BRONZE_PATH  = DATA_ROOT + "/bronze"
 SILVER_PATH  = DATA_ROOT + "/silver"
@@ -38,8 +38,8 @@ GNN_HIDDEN          = 32
 GNN_LAYERS          = 2
 
 # ── Bayesian PEFT priors ───────────────────────────────────────────────────
-SIGMA_SQ_INIT = 1e-3
-DELTA_INIT    = 1.0
+SIGMA_SQ_INIT = 1e-3 ### Alterable based on prior requirements
+DELTA_INIT    = 1.0 ### Alterable based on prior requirements
 
 # ── Evaluation ─────────────────────────────────────────────────────────────
 TRANSACTION_COSTS_BPS  = [0, 5, 10, 20]
