@@ -98,8 +98,4 @@ A few things I'm planning to extend this with:
 
 Part 7 of the notebook benchmarks the Silver feature pipeline across different Spark partition counts. It measures elapsed time, rows per second, and speedup relative to a single-node pandas baseline. The results are saved to `results/spark_benchmark.parquet` for reference. This is primarily for coursework demonstration of the distributed aspects — the numbers are cluster-specific and won't reproduce on a different Dataproc configuration.
 
----
 
-## Course Context
-
-This project was submitted for ST446 Distributed Computing for Big Data at the London School of Economics. The brief required demonstrated use of distributed data processing (Spark ETL, `applyInPandas` model execution), distributed graph computation (Pregel via GraphFrames), and a scaling benchmark. The financial application is real and the methodology is reasonable, but this is academic work — it is not investment advice and should not be used for live trading.
